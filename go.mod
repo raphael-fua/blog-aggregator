@@ -1,3 +1,4 @@
-module main.go
+module github.com/raphael-fua/blog-aggregator
 
-go 1.22.0
+go 1.26.5
+

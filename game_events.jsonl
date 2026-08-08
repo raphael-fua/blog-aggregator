@@ -1,0 +1,535 @@
+{"timestamp": "22:14:03.302", "elapsed_s": 10, "frame": 421, "type": "shot_despawned"}
+{"timestamp": "22:14:03.368", "elapsed_s": 10, "frame": 425, "type": "shot_despawned"}
+{"timestamp": "22:14:03.888", "elapsed_s": 11, "frame": 456, "type": "shot_despawned"}
+{"timestamp": "22:14:04.180", "elapsed_s": 11, "frame": 473, "type": "asteroid_shot"}
+{"timestamp": "22:14:04.181", "elapsed_s": 11, "frame": 473, "type": "asteroid_split"}
+{"timestamp": "22:14:04.452", "elapsed_s": 11, "frame": 489, "type": "shot_despawned"}
+{"timestamp": "22:14:04.554", "elapsed_s": 12, "frame": 495, "type": "shot_despawned"}
+{"timestamp": "22:14:05.025", "elapsed_s": 12, "frame": 523, "type": "asteroid_despawned"}
+{"timestamp": "22:14:05.092", "elapsed_s": 12, "frame": 527, "type": "player_damaged", "player": "Blue Player", "health": 2}
+{"timestamp": "22:14:05.579", "elapsed_s": 13, "frame": 556, "type": "shot_despawned"}
+{"timestamp": "22:14:06.167", "elapsed_s": 13, "frame": 591, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:14:06.234", "elapsed_s": 13, "frame": 595, "type": "asteroid_despawned"}
+{"timestamp": "22:14:06.945", "elapsed_s": 14, "frame": 637, "type": "asteroid_despawned"}
+{"timestamp": "22:14:08.545", "elapsed_s": 16, "frame": 732, "type": "player_damaged", "player": "Red Player", "health": 2}
+{"timestamp": "22:14:08.546", "elapsed_s": 16, "frame": 732, "type": "asteroid_split"}
+{"timestamp": "22:14:08.664", "elapsed_s": 16, "frame": 739, "type": "asteroid_shot"}
+{"timestamp": "22:14:08.664", "elapsed_s": 16, "frame": 739, "type": "asteroid_split"}
+{"timestamp": "22:14:11.980", "elapsed_s": 19, "frame": 935, "type": "asteroid_despawned"}
+{"timestamp": "22:14:13.042", "elapsed_s": 20, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:13.296", "elapsed_s": 20, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:14:13.687", "elapsed_s": 21, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:14.041", "elapsed_s": 21, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 1}
+{"timestamp": "22:14:14.042", "elapsed_s": 21, "frame": 961, "type": "player_shot", "shooter": "Blue Player", "target": "Red Player"}
+{"timestamp": "22:14:15.053", "elapsed_s": 22, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:16.183", "elapsed_s": 23, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:14:17.332", "elapsed_s": 24, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:14:18.519", "elapsed_s": 26, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:14:18.520", "elapsed_s": 26, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:14:18.706", "elapsed_s": 26, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:19.379", "elapsed_s": 26, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:20.548", "elapsed_s": 28, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:14:22.356", "elapsed_s": 29, "frame": 961, "type": "bonus_claimed", "kind": "ammo", "player": "Blue Player", "wasted": false, "ammo": 21}
+{"timestamp": "22:14:22.574", "elapsed_s": 30, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 1}
+{"timestamp": "22:14:22.574", "elapsed_s": 30, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:14:24.097", "elapsed_s": 31, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:14:24.098", "elapsed_s": 31, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:14:24.162", "elapsed_s": 31, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:14:24.162", "elapsed_s": 31, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:14:25.125", "elapsed_s": 32, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:14:25.992", "elapsed_s": 33, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 0}
+{"timestamp": "22:14:25.993", "elapsed_s": 33, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:14:25.993", "elapsed_s": 33, "frame": 961, "type": "round_over", "dead": ["Red Player"]}
+{"timestamp": "22:14:33.483", "elapsed_s": 41, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:33.551", "elapsed_s": 41, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 2}
+{"timestamp": "22:14:33.552", "elapsed_s": 41, "frame": 961, "type": "player_shot", "shooter": "Blue Player", "target": "Red Player"}
+{"timestamp": "22:14:33.653", "elapsed_s": 41, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:33.754", "elapsed_s": 41, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:14:34.853", "elapsed_s": 42, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:35.157", "elapsed_s": 42, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:35.461", "elapsed_s": 42, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:36.950", "elapsed_s": 44, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:38.065", "elapsed_s": 45, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:38.894", "elapsed_s": 46, "frame": 961, "type": "bonus_spawned", "kind": "health"}
+{"timestamp": "22:14:39.469", "elapsed_s": 46, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:39.941", "elapsed_s": 47, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:14:39.942", "elapsed_s": 47, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:14:40.026", "elapsed_s": 47, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:40.246", "elapsed_s": 47, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:40.667", "elapsed_s": 48, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:14:40.667", "elapsed_s": 48, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:14:41.004", "elapsed_s": 48, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:14:42.899", "elapsed_s": 50, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:14:43.761", "elapsed_s": 51, "frame": 961, "type": "bonus_claimed", "kind": "health", "player": "Red Player", "wasted": false, "health": 3}
+{"timestamp": "22:14:44.624", "elapsed_s": 52, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:14:44.692", "elapsed_s": 52, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:14:44.692", "elapsed_s": 52, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:14:47.985", "elapsed_s": 55, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:14:47.986", "elapsed_s": 55, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:14:48.188", "elapsed_s": 55, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:48.391", "elapsed_s": 55, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:14:48.848", "elapsed_s": 56, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:48.899", "elapsed_s": 56, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:14:48.965", "elapsed_s": 56, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:49.148", "elapsed_s": 56, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:49.555", "elapsed_s": 57, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:14:49.555", "elapsed_s": 57, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:14:50.212", "elapsed_s": 57, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:50.366", "elapsed_s": 57, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:14:50.434", "elapsed_s": 57, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:51.162", "elapsed_s": 58, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:14:51.298", "elapsed_s": 58, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:51.502", "elapsed_s": 59, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:14:52.011", "elapsed_s": 59, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:14:52.246", "elapsed_s": 59, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:52.531", "elapsed_s": 60, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:14:53.278", "elapsed_s": 60, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:14:53.413", "elapsed_s": 60, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:53.854", "elapsed_s": 61, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:14:55.242", "elapsed_s": 62, "frame": 961, "type": "bonus_claimed", "kind": "ammo", "player": "Blue Player", "wasted": false, "ammo": 18}
+{"timestamp": "22:14:56.303", "elapsed_s": 63, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:14:56.980", "elapsed_s": 64, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:57.165", "elapsed_s": 64, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:57.602", "elapsed_s": 65, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:14:57.602", "elapsed_s": 65, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:14:57.653", "elapsed_s": 65, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 2}
+{"timestamp": "22:14:57.653", "elapsed_s": 65, "frame": 961, "type": "player_shot", "shooter": "Blue Player", "target": "Red Player"}
+{"timestamp": "22:14:57.788", "elapsed_s": 65, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:14:57.789", "elapsed_s": 65, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:14:57.838", "elapsed_s": 65, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:14:57.839", "elapsed_s": 65, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:14:58.075", "elapsed_s": 65, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:58.228", "elapsed_s": 65, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:58.531", "elapsed_s": 66, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:14:58.904", "elapsed_s": 66, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:14:59.648", "elapsed_s": 67, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:00.002", "elapsed_s": 67, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:15:00.053", "elapsed_s": 67, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:00.222", "elapsed_s": 67, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:00.408", "elapsed_s": 67, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:00.917", "elapsed_s": 68, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:15:01.035", "elapsed_s": 68, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:15:01.505", "elapsed_s": 69, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:15:01.674", "elapsed_s": 69, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 1}
+{"timestamp": "22:15:01.707", "elapsed_s": 69, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:02.012", "elapsed_s": 69, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:02.114", "elapsed_s": 69, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:15:02.267", "elapsed_s": 69, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:15:03.095", "elapsed_s": 70, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:15:03.599", "elapsed_s": 71, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:04.821", "elapsed_s": 72, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:04.989", "elapsed_s": 72, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:07.738", "elapsed_s": 75, "frame": 961, "type": "bonus_claimed", "kind": "ammo", "player": "Red Player", "wasted": false, "ammo": 15}
+{"timestamp": "22:15:08.919", "elapsed_s": 76, "frame": 961, "type": "bonus_spawned", "kind": "health"}
+{"timestamp": "22:15:09.171", "elapsed_s": 76, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 2}
+{"timestamp": "22:15:09.172", "elapsed_s": 76, "frame": 961, "type": "player_shot", "shooter": "Red Player", "target": "Blue Player"}
+{"timestamp": "22:15:09.644", "elapsed_s": 77, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:15:10.810", "elapsed_s": 78, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:10.811", "elapsed_s": 78, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:11.771", "elapsed_s": 79, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:11.890", "elapsed_s": 79, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:11.906", "elapsed_s": 79, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:11.957", "elapsed_s": 79, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:12.178", "elapsed_s": 79, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 1}
+{"timestamp": "22:15:12.179", "elapsed_s": 79, "frame": 961, "type": "player_shot", "shooter": "Red Player", "target": "Blue Player"}
+{"timestamp": "22:15:12.246", "elapsed_s": 79, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:15:13.798", "elapsed_s": 81, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:15:14.374", "elapsed_s": 81, "frame": 961, "type": "bonus_claimed", "kind": "health", "player": "Red Player", "wasted": false, "health": 2}
+{"timestamp": "22:15:15.369", "elapsed_s": 82, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:15.419", "elapsed_s": 82, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 0}
+{"timestamp": "22:15:15.420", "elapsed_s": 82, "frame": 961, "type": "player_shot", "shooter": "Red Player", "target": "Blue Player"}
+{"timestamp": "22:15:15.420", "elapsed_s": 82, "frame": 961, "type": "round_over", "dead": ["Blue Player"]}
+{"timestamp": "22:15:39.169", "elapsed_s": 106, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:39.353", "elapsed_s": 106, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:39.658", "elapsed_s": 107, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 2}
+{"timestamp": "22:15:39.659", "elapsed_s": 107, "frame": 961, "type": "player_shot", "shooter": "Blue Player", "target": "Red Player"}
+{"timestamp": "22:15:39.862", "elapsed_s": 107, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:40.046", "elapsed_s": 107, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:40.164", "elapsed_s": 107, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:41.717", "elapsed_s": 109, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:42.021", "elapsed_s": 109, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:15:42.022", "elapsed_s": 109, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:15:44.021", "elapsed_s": 111, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 1}
+{"timestamp": "22:15:44.022", "elapsed_s": 111, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:15:44.968", "elapsed_s": 112, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:15:45.927", "elapsed_s": 113, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:15:46.315", "elapsed_s": 113, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:15:46.651", "elapsed_s": 114, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:15:46.868", "elapsed_s": 114, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:46.971", "elapsed_s": 114, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:47.611", "elapsed_s": 115, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:15:47.714", "elapsed_s": 115, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:48.758", "elapsed_s": 116, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:48.775", "elapsed_s": 116, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:15:49.551", "elapsed_s": 117, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:50.161", "elapsed_s": 117, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:50.379", "elapsed_s": 117, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:50.565", "elapsed_s": 118, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:50.751", "elapsed_s": 118, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:50.939", "elapsed_s": 118, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:51.344", "elapsed_s": 118, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:51.565", "elapsed_s": 119, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:51.817", "elapsed_s": 119, "frame": 961, "type": "bonus_claimed", "kind": "ammo", "player": "Blue Player", "wasted": false, "ammo": 13}
+{"timestamp": "22:15:52.020", "elapsed_s": 119, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:52.124", "elapsed_s": 119, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:15:52.223", "elapsed_s": 119, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:15:52.273", "elapsed_s": 119, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:54.910", "elapsed_s": 122, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:55.736", "elapsed_s": 123, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:55.940", "elapsed_s": 123, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:15:57.359", "elapsed_s": 124, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:58.623", "elapsed_s": 126, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:59.802", "elapsed_s": 127, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:15:59.938", "elapsed_s": 127, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 0}
+{"timestamp": "22:15:59.938", "elapsed_s": 127, "frame": 961, "type": "player_shot", "shooter": "Blue Player", "target": "Red Player"}
+{"timestamp": "22:15:59.938", "elapsed_s": 127, "frame": 961, "type": "round_over", "dead": ["Red Player"]}
+{"timestamp": "22:16:08.286", "elapsed_s": 135, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:08.605", "elapsed_s": 136, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:09.097", "elapsed_s": 136, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:16:09.099", "elapsed_s": 136, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:16:09.251", "elapsed_s": 136, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 2}
+{"timestamp": "22:16:09.810", "elapsed_s": 137, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:10.927", "elapsed_s": 138, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:16:10.944", "elapsed_s": 138, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:11.702", "elapsed_s": 139, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:11.822", "elapsed_s": 139, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:12.803", "elapsed_s": 140, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:16:13.290", "elapsed_s": 140, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:14.049", "elapsed_s": 141, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:16:14.690", "elapsed_s": 142, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:14.759", "elapsed_s": 142, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:15.501", "elapsed_s": 143, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:15.737", "elapsed_s": 143, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:15.820", "elapsed_s": 143, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 1}
+{"timestamp": "22:16:15.821", "elapsed_s": 143, "frame": 961, "type": "player_shot", "shooter": "Blue Player", "target": "Red Player"}
+{"timestamp": "22:16:16.591", "elapsed_s": 144, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:17.096", "elapsed_s": 144, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:17.283", "elapsed_s": 144, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:17.468", "elapsed_s": 144, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:18.176", "elapsed_s": 145, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:18.835", "elapsed_s": 146, "frame": 961, "type": "bonus_claimed", "kind": "ammo", "player": "Blue Player", "wasted": false, "ammo": 26}
+{"timestamp": "22:16:19.645", "elapsed_s": 147, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:16:19.646", "elapsed_s": 147, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:16:22.687", "elapsed_s": 150, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:16:22.688", "elapsed_s": 150, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:16:22.805", "elapsed_s": 150, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:16:23.276", "elapsed_s": 150, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:23.496", "elapsed_s": 151, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:16:23.530", "elapsed_s": 151, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:16:23.937", "elapsed_s": 151, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:16:24.123", "elapsed_s": 151, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:16:24.497", "elapsed_s": 152, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:24.667", "elapsed_s": 152, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:24.936", "elapsed_s": 152, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 2}
+{"timestamp": "22:16:24.937", "elapsed_s": 152, "frame": 961, "type": "player_shot", "shooter": "Red Player", "target": "Blue Player"}
+{"timestamp": "22:16:26.080", "elapsed_s": 153, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 0}
+{"timestamp": "22:16:26.082", "elapsed_s": 153, "frame": 961, "type": "player_shot", "shooter": "Blue Player", "target": "Red Player"}
+{"timestamp": "22:16:26.082", "elapsed_s": 153, "frame": 961, "type": "round_over", "dead": ["Red Player"]}
+{"timestamp": "22:16:50.114", "elapsed_s": 177, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:51.465", "elapsed_s": 178, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:52.173", "elapsed_s": 179, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 2}
+{"timestamp": "22:16:52.174", "elapsed_s": 179, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:16:52.241", "elapsed_s": 179, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:52.259", "elapsed_s": 179, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:16:52.446", "elapsed_s": 179, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:53.679", "elapsed_s": 181, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 1}
+{"timestamp": "22:16:53.680", "elapsed_s": 181, "frame": 961, "type": "player_shot", "shooter": "Blue Player", "target": "Red Player"}
+{"timestamp": "22:16:55.791", "elapsed_s": 183, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:16:55.824", "elapsed_s": 183, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 2}
+{"timestamp": "22:16:55.824", "elapsed_s": 183, "frame": 961, "type": "player_shot", "shooter": "Red Player", "target": "Blue Player"}
+{"timestamp": "22:16:56.938", "elapsed_s": 184, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:57.954", "elapsed_s": 185, "frame": 961, "type": "bonus_claimed", "kind": "ammo", "player": "Blue Player", "wasted": false, "ammo": 29}
+{"timestamp": "22:16:57.986", "elapsed_s": 185, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:16:58.661", "elapsed_s": 186, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 1}
+{"timestamp": "22:16:58.663", "elapsed_s": 186, "frame": 961, "type": "player_shot", "shooter": "Red Player", "target": "Blue Player"}
+{"timestamp": "22:16:59.590", "elapsed_s": 187, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:17:00.195", "elapsed_s": 187, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:17:00.197", "elapsed_s": 187, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:17:00.986", "elapsed_s": 188, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:17:01.297", "elapsed_s": 188, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:17:02.414", "elapsed_s": 189, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:17:02.733", "elapsed_s": 190, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:17:04.051", "elapsed_s": 191, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:17:04.996", "elapsed_s": 192, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:17:05.804", "elapsed_s": 193, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:17:05.906", "elapsed_s": 193, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:17:07.133", "elapsed_s": 194, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:17:07.335", "elapsed_s": 194, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:17:12.006", "elapsed_s": 199, "frame": 961, "type": "bonus_claimed", "kind": "ammo", "player": "Blue Player", "wasted": false, "ammo": 35}
+{"timestamp": "22:17:13.699", "elapsed_s": 201, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:17:13.884", "elapsed_s": 201, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 0}
+{"timestamp": "22:17:13.885", "elapsed_s": 201, "frame": 961, "type": "player_shot", "shooter": "Red Player", "target": "Blue Player"}
+{"timestamp": "22:17:13.885", "elapsed_s": 201, "frame": 961, "type": "round_over", "dead": ["Blue Player"]}
+{"timestamp": "22:18:17.228", "elapsed_s": 264, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:17.533", "elapsed_s": 265, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:17.836", "elapsed_s": 265, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:18.545", "elapsed_s": 266, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:18.849", "elapsed_s": 266, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:19.153", "elapsed_s": 266, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:19.458", "elapsed_s": 266, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:19.761", "elapsed_s": 267, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:20.065", "elapsed_s": 267, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:20.371", "elapsed_s": 267, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:20.671", "elapsed_s": 268, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:20.976", "elapsed_s": 268, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:20.994", "elapsed_s": 268, "frame": 961, "type": "bonus_spawned", "kind": "health"}
+{"timestamp": "22:18:21.279", "elapsed_s": 268, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:21.583", "elapsed_s": 269, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:21.888", "elapsed_s": 269, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:22.194", "elapsed_s": 269, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:22.481", "elapsed_s": 270, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:22.802", "elapsed_s": 270, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:23.073", "elapsed_s": 270, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:18:23.075", "elapsed_s": 270, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:18:23.361", "elapsed_s": 270, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:18:23.362", "elapsed_s": 270, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:18:26.326", "elapsed_s": 273, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:27.439", "elapsed_s": 274, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:27.574", "elapsed_s": 275, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:18:27.741", "elapsed_s": 275, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:28.349", "elapsed_s": 275, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:28.653", "elapsed_s": 276, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:28.754", "elapsed_s": 276, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:28.959", "elapsed_s": 276, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:29.222", "elapsed_s": 276, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 2}
+{"timestamp": "22:18:29.224", "elapsed_s": 276, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:18:29.273", "elapsed_s": 276, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:29.578", "elapsed_s": 277, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:29.864", "elapsed_s": 277, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:30.118", "elapsed_s": 277, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:30.169", "elapsed_s": 277, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:30.473", "elapsed_s": 277, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:30.777", "elapsed_s": 278, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:30.996", "elapsed_s": 278, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:18:31.080", "elapsed_s": 278, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:31.384", "elapsed_s": 278, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:31.686", "elapsed_s": 279, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:31.988", "elapsed_s": 279, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:18:33.370", "elapsed_s": 280, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:33.572", "elapsed_s": 281, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:35.078", "elapsed_s": 282, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:35.635", "elapsed_s": 283, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:35.955", "elapsed_s": 283, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:36.073", "elapsed_s": 283, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 2}
+{"timestamp": "22:18:38.410", "elapsed_s": 285, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:40.564", "elapsed_s": 288, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 1}
+{"timestamp": "22:18:40.565", "elapsed_s": 288, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:18:41.004", "elapsed_s": 288, "frame": 961, "type": "bonus_spawned", "kind": "health"}
+{"timestamp": "22:18:42.793", "elapsed_s": 290, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:43.316", "elapsed_s": 290, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:46.018", "elapsed_s": 293, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:47.048", "elapsed_s": 294, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:47.753", "elapsed_s": 295, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:50.762", "elapsed_s": 298, "frame": 961, "type": "bonus_claimed", "kind": "health", "player": "Blue Player", "wasted": false, "health": 2}
+{"timestamp": "22:18:51.018", "elapsed_s": 298, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:18:51.505", "elapsed_s": 299, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:52.133", "elapsed_s": 299, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:52.167", "elapsed_s": 299, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:55.940", "elapsed_s": 303, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 1}
+{"timestamp": "22:18:55.941", "elapsed_s": 303, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:18:56.037", "elapsed_s": 303, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:57.186", "elapsed_s": 304, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:57.756", "elapsed_s": 305, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:18:59.765", "elapsed_s": 307, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:19:00.115", "elapsed_s": 307, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:19:01.027", "elapsed_s": 308, "frame": 961, "type": "bonus_spawned", "kind": "health"}
+{"timestamp": "22:19:01.044", "elapsed_s": 308, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:19:02.244", "elapsed_s": 309, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:19:05.515", "elapsed_s": 313, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:19:06.549", "elapsed_s": 314, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:19:07.611", "elapsed_s": 315, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:19:07.914", "elapsed_s": 315, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:19:09.298", "elapsed_s": 316, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:19:11.038", "elapsed_s": 318, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:19:12.979", "elapsed_s": 320, "frame": 961, "type": "bonus_claimed", "kind": "ammo", "player": "Red Player", "wasted": false, "ammo": 10}
+{"timestamp": "22:19:13.534", "elapsed_s": 321, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:19:17.480", "elapsed_s": 325, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 0}
+{"timestamp": "22:19:17.481", "elapsed_s": 325, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:19:17.482", "elapsed_s": 325, "frame": 961, "type": "round_over", "dead": ["Red Player"]}
+{"timestamp": "22:20:07.166", "elapsed_s": 374, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:20:07.169", "elapsed_s": 374, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:20:10.710", "elapsed_s": 378, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:20:10.825", "elapsed_s": 378, "frame": 961, "type": "bonus_spawned", "kind": "health"}
+{"timestamp": "22:20:11.228", "elapsed_s": 378, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:20:12.022", "elapsed_s": 379, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:20:16.141", "elapsed_s": 383, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:17.003", "elapsed_s": 384, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:18.928", "elapsed_s": 386, "frame": 961, "type": "bonus_claimed", "kind": "health", "player": "Red Player", "wasted": true, "health": 3}
+{"timestamp": "22:20:19.267", "elapsed_s": 386, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:19.672", "elapsed_s": 387, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:20.837", "elapsed_s": 388, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:20:28.427", "elapsed_s": 395, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:30.333", "elapsed_s": 397, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:30.838", "elapsed_s": 398, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:20:31.381", "elapsed_s": 398, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 2}
+{"timestamp": "22:20:31.535", "elapsed_s": 399, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:31.822", "elapsed_s": 399, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:34.826", "elapsed_s": 402, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:35.892", "elapsed_s": 403, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:37.064", "elapsed_s": 404, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 1}
+{"timestamp": "22:20:37.066", "elapsed_s": 404, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:20:37.990", "elapsed_s": 405, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:39.510", "elapsed_s": 407, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:40.265", "elapsed_s": 407, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:40.450", "elapsed_s": 407, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:40.687", "elapsed_s": 408, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:40.841", "elapsed_s": 408, "frame": 961, "type": "bonus_spawned", "kind": "health"}
+{"timestamp": "22:20:43.088", "elapsed_s": 410, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:43.936", "elapsed_s": 411, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:47.750", "elapsed_s": 415, "frame": 961, "type": "bonus_claimed", "kind": "ammo", "player": "Red Player", "wasted": false, "ammo": 28}
+{"timestamp": "22:20:47.885", "elapsed_s": 415, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:47.886", "elapsed_s": 415, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 2}
+{"timestamp": "22:20:47.886", "elapsed_s": 415, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:20:49.388", "elapsed_s": 416, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 1}
+{"timestamp": "22:20:49.389", "elapsed_s": 416, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:20:49.793", "elapsed_s": 417, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:50.845", "elapsed_s": 418, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:20:51.688", "elapsed_s": 419, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:52.061", "elapsed_s": 419, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:55.372", "elapsed_s": 422, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:55.507", "elapsed_s": 423, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:56.550", "elapsed_s": 424, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:56.616", "elapsed_s": 424, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:57.797", "elapsed_s": 425, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:20:58.033", "elapsed_s": 425, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:21:00.210", "elapsed_s": 427, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 0}
+{"timestamp": "22:21:00.210", "elapsed_s": 427, "frame": 961, "type": "round_over", "dead": ["Blue Player"]}
+{"timestamp": "22:21:20.035", "elapsed_s": 447, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:21:21.774", "elapsed_s": 449, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 2}
+{"timestamp": "22:21:21.775", "elapsed_s": 449, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:21:27.217", "elapsed_s": 454, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:21:27.673", "elapsed_s": 455, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:21:27.723", "elapsed_s": 455, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 2}
+{"timestamp": "22:21:27.724", "elapsed_s": 455, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:21:30.039", "elapsed_s": 457, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:21:30.361", "elapsed_s": 457, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:21:31.001", "elapsed_s": 458, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:21:31.424", "elapsed_s": 458, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:21:31.780", "elapsed_s": 459, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:21:32.973", "elapsed_s": 460, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 1}
+{"timestamp": "22:21:33.208", "elapsed_s": 460, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:21:34.524", "elapsed_s": 462, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:21:36.107", "elapsed_s": 463, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 0}
+{"timestamp": "22:21:36.108", "elapsed_s": 463, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:21:36.109", "elapsed_s": 463, "frame": 961, "type": "round_over", "dead": ["Red Player"]}
+{"timestamp": "22:21:43.467", "elapsed_s": 470, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 2}
+{"timestamp": "22:21:43.469", "elapsed_s": 470, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:21:47.123", "elapsed_s": 474, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:21:47.224", "elapsed_s": 474, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:21:49.241", "elapsed_s": 476, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:21:49.547", "elapsed_s": 477, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:21:53.967", "elapsed_s": 481, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:21:57.231", "elapsed_s": 484, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:21:58.686", "elapsed_s": 486, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 1}
+{"timestamp": "22:21:58.687", "elapsed_s": 486, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:21:59.460", "elapsed_s": 486, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:01.247", "elapsed_s": 488, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:02.277", "elapsed_s": 489, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:03.627", "elapsed_s": 491, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:04.711", "elapsed_s": 492, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:05.069", "elapsed_s": 492, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:06.088", "elapsed_s": 493, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:07.242", "elapsed_s": 494, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:22:07.699", "elapsed_s": 495, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:08.529", "elapsed_s": 496, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:13.552", "elapsed_s": 501, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:15.910", "elapsed_s": 503, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:15.911", "elapsed_s": 503, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:17.243", "elapsed_s": 504, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:22:18.937", "elapsed_s": 506, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:21.899", "elapsed_s": 509, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:26.149", "elapsed_s": 513, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:27.246", "elapsed_s": 514, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:22:27.263", "elapsed_s": 514, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:30.139", "elapsed_s": 517, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:30.547", "elapsed_s": 518, "frame": 961, "type": "bonus_claimed", "kind": "ammo", "player": "Blue Player", "wasted": false, "ammo": 30}
+{"timestamp": "22:22:30.835", "elapsed_s": 518, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:32.273", "elapsed_s": 519, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:22:32.932", "elapsed_s": 520, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:33.455", "elapsed_s": 520, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:22:34.129", "elapsed_s": 521, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:35.679", "elapsed_s": 523, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:36.183", "elapsed_s": 523, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:37.261", "elapsed_s": 524, "frame": 961, "type": "bonus_spawned", "kind": "health"}
+{"timestamp": "22:22:38.693", "elapsed_s": 526, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 0}
+{"timestamp": "22:22:38.694", "elapsed_s": 526, "frame": 961, "type": "round_over", "dead": ["Red Player"]}
+{"timestamp": "22:22:49.747", "elapsed_s": 537, "frame": 961, "type": "bonus_spawned", "kind": "health"}
+{"timestamp": "22:22:50.409", "elapsed_s": 537, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:52.903", "elapsed_s": 540, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:55.113", "elapsed_s": 542, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:55.904", "elapsed_s": 543, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 2}
+{"timestamp": "22:22:55.905", "elapsed_s": 543, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:22:57.069", "elapsed_s": 544, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:58.340", "elapsed_s": 545, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:22:59.406", "elapsed_s": 546, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:22:59.709", "elapsed_s": 547, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:22:59.758", "elapsed_s": 547, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:23:00.047", "elapsed_s": 547, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:02.686", "elapsed_s": 550, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:03.258", "elapsed_s": 550, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:03.662", "elapsed_s": 551, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 2}
+{"timestamp": "22:23:03.663", "elapsed_s": 551, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:23:05.175", "elapsed_s": 552, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 1}
+{"timestamp": "22:23:05.176", "elapsed_s": 552, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:23:06.974", "elapsed_s": 554, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:09.424", "elapsed_s": 556, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:09.764", "elapsed_s": 557, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:23:11.933", "elapsed_s": 559, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:23:14.319", "elapsed_s": 561, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:15.403", "elapsed_s": 562, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 1}
+{"timestamp": "22:23:15.791", "elapsed_s": 563, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:16.282", "elapsed_s": 563, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:23:16.284", "elapsed_s": 563, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:23:16.905", "elapsed_s": 564, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:17.329", "elapsed_s": 564, "frame": 961, "type": "asteroid_shot"}
+{"timestamp": "22:23:17.330", "elapsed_s": 564, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:23:17.548", "elapsed_s": 565, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:23:17.583", "elapsed_s": 565, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:23:17.871", "elapsed_s": 565, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:17.889", "elapsed_s": 565, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:23:18.566", "elapsed_s": 566, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:18.599", "elapsed_s": 566, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:23:18.905", "elapsed_s": 566, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:23:19.210", "elapsed_s": 566, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:23:19.379", "elapsed_s": 566, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:23:19.564", "elapsed_s": 567, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:23:19.751", "elapsed_s": 567, "frame": 961, "type": "shot_despawned"}
+{"timestamp": "22:23:19.767", "elapsed_s": 567, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:23:19.920", "elapsed_s": 567, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 0}
+{"timestamp": "22:23:19.920", "elapsed_s": 567, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:23:19.921", "elapsed_s": 567, "frame": 961, "type": "round_over", "dead": ["Blue Player"]}
+{"timestamp": "22:23:39.439", "elapsed_s": 586, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 2}
+{"timestamp": "22:23:39.441", "elapsed_s": 586, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:23:40.257", "elapsed_s": 587, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:23:40.948", "elapsed_s": 588, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 1}
+{"timestamp": "22:23:40.948", "elapsed_s": 588, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:23:43.009", "elapsed_s": 590, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:45.312", "elapsed_s": 592, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:46.374", "elapsed_s": 593, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:47.914", "elapsed_s": 595, "frame": 961, "type": "bonus_claimed", "kind": "ammo", "player": "Red Player", "wasted": false, "ammo": 30}
+{"timestamp": "22:23:50.261", "elapsed_s": 597, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:23:50.581", "elapsed_s": 598, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:51.934", "elapsed_s": 599, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:52.933", "elapsed_s": 600, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:53.865", "elapsed_s": 601, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:55.140", "elapsed_s": 602, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:56.894", "elapsed_s": 604, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:23:58.342", "elapsed_s": 605, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:24:00.273", "elapsed_s": 607, "frame": 961, "type": "bonus_spawned", "kind": "ammo"}
+{"timestamp": "22:24:01.826", "elapsed_s": 609, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:24:03.651", "elapsed_s": 611, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 0}
+{"timestamp": "22:24:03.652", "elapsed_s": 611, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:24:03.653", "elapsed_s": 611, "frame": 961, "type": "round_over", "dead": ["Blue Player"]}
+{"timestamp": "22:24:12.883", "elapsed_s": 620, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 2}
+{"timestamp": "22:24:12.884", "elapsed_s": 620, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:24:14.507", "elapsed_s": 622, "frame": 961, "type": "bonus_spawned", "kind": "health"}
+{"timestamp": "22:24:19.309", "elapsed_s": 626, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 1}
+{"timestamp": "22:24:19.310", "elapsed_s": 626, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:24:20.286", "elapsed_s": 627, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:24:20.710", "elapsed_s": 628, "frame": 961, "type": "player_damaged", "player": "Blue Player", "health": 2}
+{"timestamp": "22:24:20.711", "elapsed_s": 628, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:24:20.896", "elapsed_s": 628, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:24:21.066", "elapsed_s": 628, "frame": 961, "type": "asteroid_despawned"}
+{"timestamp": "22:24:22.279", "elapsed_s": 629, "frame": 961, "type": "player_damaged", "player": "Red Player", "health": 0}
+{"timestamp": "22:24:22.281", "elapsed_s": 629, "frame": 961, "type": "asteroid_split"}
+{"timestamp": "22:24:22.281", "elapsed_s": 629, "frame": 961, "type": "round_over", "dead": ["Red Player"]}
