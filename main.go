@@ -12,13 +12,32 @@ func main() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
-	cfg.SetUser("Fua-Marcou")
-	cfg, err = config.Read()
-	if err != nil {
+	s := state{
+		cfg: &cfg,
+	}
+	cmds := commands{
+ 		m: map[string]func(*state, command) error{
+			"login": handlerLogin,
+		},
+	}
+	cmdLine := os.Args
+	if len(cmdLine) < 2 {
+		fmt.Println("not enough args")
+		os.Exit(1)
+	}
+	cmd := command{
+		name: cmdLine[1],
+		args: cmdLine[2:],
+	}
+
+	err = cmds.run(&s, cmd)
+	if err != nil{
 		fmt.Println(err)
 		os.Exit(1)
 	}
-	fmt.Println(cfg.DbUrl)
-	fmt.Println(cfg.UserName)
 }
+
+
+
+
 
