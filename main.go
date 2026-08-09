@@ -2,8 +2,11 @@ package main
 
 import (
 	"github.com/raphael-fua/blog-aggregator/internal/config"
+	"github.com/raphael-fua/blog-aggregator/internal/database"
 	"fmt"
 	"os"
+	_ "github.com/lib/pq"
+	"database/sql"
 )
 
 func main() {
@@ -12,12 +15,21 @@ func main() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
+
+	db, err := sql.Open("postgres", cfg.DbUrl)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+
 	s := state{
+		db: database.New(db),
 		cfg: &cfg,
 	}
 	cmds := commands{
  		m: map[string]func(*state, command) error{
 			"login": handlerLogin,
+			"register": handlerRegister,
 		},
 	}
 	cmdLine := os.Args

@@ -1,16 +1,20 @@
 package main
 
 import (
-	// "bufio"
-	"fmt"
-	// "os"
-	// "strings"
+	"context"
+	"database/sql"
 	"errors"
+	"fmt"
+	"time"
+
+	"github.com/google/uuid"
 	"github.com/raphael-fua/blog-aggregator/internal/config"
+	"github.com/raphael-fua/blog-aggregator/internal/database"
 )
 
 
 type state struct {
+	db *database.Queries
 	cfg *config.Config
 }
 
@@ -35,20 +39,23 @@ func (c *commands) run(s *state, cmd command) error {
 }
 
 
-func (c *commands) register(name string, f func(*state, command) error) {
-	// if c.m == nil {
-	// 	fmt.Println("`commands` field `m map[string]func(*state, command) error` is nil")
-	// 	return
-	// }
-	c.m[name] = f
-}
+// func (c *commands) register(name string, f func(*state, command) error) {
+// 	handlerRegister(s, 
+// 	c.m[nam
+// }        
 
 
 func handlerLogin(s *state, cmd command) error {
 	if len(cmd.args) == 0 {
 		return errors.New("the `login` handler expects a single argument, the username")
 	}
-	err := s.cfg.SetUser(cmd.args[0])
+	name := cmd.args[0]
+	ctx := context.Background()
+	_, err := s.db.GetUser(ctx, name)
+    if err != nil {
+		return errors.New("cannot login to an account that does not exist")
+	}
+	err = s.cfg.SetUser(name)
 	if err != nil {
 		return err
 	}
@@ -56,49 +63,46 @@ func handlerLogin(s *state, cmd command) error {
 	return nil
 }
 
-// func getCommands() map[string]command {
-// 	return map[string]command{
-// 		"login": {
-// 			name: "login",
-// 			args: []string,
-// 		},
-// 		"map": {
-// 			name:        "map",
-// 			description: "Gets the next page of locations",
-// 			callback:    commandMapf,
-// 		},
-// 		"mapb": {
-// 			name:        "mapb",
-// 			description: "Gets the previous page of locations",
-// 			callback:    commandMapb,
-// 		},
-// 		"exit": {
-// 			name:        "exit",
-// 			description: "Exits the Pokedex",
-// 			callback:    commandExit,
-// 		},
-// 		"explore": {
-// 			name:        "explore",
-// 			description: "Explores the location passed to the command",
-// 			callback:    commandExplore,
-// 		},
-// 		"catch": {
-// 			name:        "catch <pokemon_name>",
-// 			description: "Attempt to catch a pokemon",
-// 			callback:    commandCatch,
-// 		},
-// 		"inspect": {
-// 			name:        "inspect <pokemon_name>",
-// 			description: "Get info of a captured pokemon",
-// 			callback:    commandInspect,
-// 		},
-// 		"pokedex": {
-// 			name:        "pokedex",
-// 			description: "prints list of all names of caught pokemon",
-// 			callback:    commandPokedex,
-// 		},
-// 	}
-// }
+
+
+func handlerRegister(s *state, cmd command) error {
+	if len(cmd.args) == 0 {
+		return errors.New("the `register` handler expects a single argument, the username")
+	}
+
+	name := cmd.args[0]
+
+	ctx := context.Background()
+	_, err := s.db.GetUser(ctx, name)
+	if err == nil {
+		return fmt.Errorf("%s already registered", name)
+	}
+	if !errors.Is(err, sql.ErrNoRows) {
+        return err
+	}
+
+	t := time.Now() 
+	user, err := s.db.CreateUser(ctx, database.CreateUserParams{
+		ID: uuid.New(),
+		CreatedAt: t,
+		UpdatedAt: t,
+		Name: name,
+
+	})
+	if err != nil {
+		return err
+	}
+    err = s.cfg.SetUser(name)
+	if err != nil {
+		return err
+	}
+	fmt.Printf("user %s was created\n", name)
+	fmt.Printf("  ID: %v\n", user.ID)
+	fmt.Printf("  CreatedAt: %v\n", user.CreatedAt)
+	fmt.Printf("  UpdatedAt: %v\n", user.UpdatedAt)
+	fmt.Printf("  Name: %v\n", user.Name)
+	return nil
+}
 
 
 
