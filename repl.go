@@ -3,8 +3,12 @@ package main
 import (
 	"context"
 	"database/sql"
+	"encoding/xml"
 	"errors"
 	"fmt"
+	"html"
+	"io"
+	"net/http"
 	"time"
 
 	"github.com/google/uuid"
@@ -125,6 +129,90 @@ func handlerUsers(s *state, cmd command) error {
 	}
 	return nil
 }
+
+
+func handlerAgg(s *state, cmd command) error {
+	ctx := context.Background()
+	rssfeed, err := fetchFeed(ctx, "https://www.wagslane.dev/index.xml")
+    if err != nil {
+		return err
+	}
+	// fmt.Printf("FEED: %+v\n", rssfeed)
+
+	fmt.Println("Channel")
+	fmt.Printf("  Title: %s\n", rssfeed.Channel.Title)
+	fmt.Printf("  Link: %s\n", rssfeed.Channel.Link)
+	fmt.Printf("  Description: %s\n", rssfeed.Channel.Description)
+
+	for i, item := range rssfeed.Channel.Item {
+		fmt.Printf("    Item %d\n", i)
+		fmt.Printf("      Title: %s\n", item.Title)
+		fmt.Printf("      Link: %s\n", item.Link)
+		fmt.Printf("      Description: %s\n", item.Description)
+		fmt.Printf("      PubDate: %s\n", item.PubDate)
+	}
+	return nil
+}
+
+
+type RSSFeed struct {
+	Channel struct {
+		Title       string    `xml:"title"`
+		Link        string    `xml:"link"`
+		Description string    `xml:"description"`
+		Item        []RSSItem `xml:"item"`
+	} `xml:"channel"`
+}
+
+type RSSItem struct {
+	Title       string `xml:"title"`
+	Link        string `xml:"link"`
+	Description string `xml:"description"`
+	PubDate     string `xml:"pubDate"`
+
+}
+
+func fetchFeed(ctx context.Context, feedURL string) (*RSSFeed, error) {
+	req, err := http.NewRequestWithContext(ctx, "GET", feedURL, nil)
+	if err != nil {
+		return nil, err
+	}
+	client := http.Client{
+    	Timeout: 10 * time.Second,
+	}
+	req.Header.Set("User-Agent", "gator")
+
+	resp, err := client.Do(req)
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	dat, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, err
+	}
+
+	rssResp := RSSFeed{}
+	err = xml.Unmarshal(dat, &rssResp)
+	if err != nil {
+		return nil, err
+	}
+
+	rssResp.Channel.Title = html.UnescapeString(rssResp.Channel.Title)
+	rssResp.Channel.Description = html.UnescapeString(rssResp.Channel.Description)
+	for i := range rssResp.Channel.Item {
+		rssResp.Channel.Item[i].Title = html.UnescapeString(rssResp.Channel.Item[i].Title)
+		rssResp.Channel.Item[i].Description = html.UnescapeString(rssResp.Channel.Item[i].Description)
+	}
+
+	return &rssResp, nil
+}
+
+
+
+
+
 
 
 
