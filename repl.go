@@ -140,7 +140,7 @@ func handlerAddFeed(s *state, cmd command) error {
 	url := cmd.args[1]
 	t := time.Now()
 
-	user, err := s.db.GetUser(ctx, name)
+	user, err := s.db.GetUser(ctx, s.cfg.UserName)
 	if err != nil {
 		return err
 	}
