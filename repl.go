@@ -39,12 +39,6 @@ func (c *commands) run(s *state, cmd command) error {
 }
 
 
-// func (c *commands) register(name string, f func(*state, command) error) {
-// 	handlerRegister(s, 
-// 	c.m[nam
-// }        
-
-
 func handlerLogin(s *state, cmd command) error {
 	if len(cmd.args) == 0 {
 		return errors.New("the `login` handler expects a single argument, the username")
@@ -105,6 +99,15 @@ func handlerRegister(s *state, cmd command) error {
 }
 
 
+func handlerReset(s *state, cmd command) error {
+	ctx := context.Background()
+	err := s.db.ResetDatabase(ctx)
+    if err != nil {
+		return errors.New("failed to resed database")
+	}
+	fmt.Println("database has been reset")
+	return nil
+}
 
 
 

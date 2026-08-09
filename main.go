@@ -30,6 +30,7 @@ func main() {
  		m: map[string]func(*state, command) error{
 			"login": handlerLogin,
 			"register": handlerRegister,
+			"reset": handlerReset,
 		},
 	}
 	cmdLine := os.Args
@@ -48,6 +49,7 @@ func main() {
 		os.Exit(1)
 	}
 }
+
 
 
 
