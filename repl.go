@@ -103,9 +103,26 @@ func handlerReset(s *state, cmd command) error {
 	ctx := context.Background()
 	err := s.db.ResetDatabase(ctx)
     if err != nil {
-		return errors.New("failed to resed database")
+		return errors.New("failed to reset database")
 	}
 	fmt.Println("database has been reset")
+	return nil
+}
+
+
+func handlerUsers(s *state, cmd command) error {
+	ctx := context.Background()
+	users, err := s.db.GetUsers(ctx)
+    if err != nil {
+		return errors.New("failed to get users")
+	}
+	for _, user := range users {
+		if s.cfg.UserName == user.Name {
+			fmt.Printf("* %s (current)\n", user.Name)
+		} else {
+			fmt.Printf("* %s\n", user.Name)
+		}
+	}
 	return nil
 }
 

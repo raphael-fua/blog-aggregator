@@ -8,13 +8,16 @@ VALUES (
 )
 RETURNING *;
 
-
 -- name: GetUser :one
 SELECT * FROM users WHERE name = $1;
 
+-- name: GetUsers :many
+SELECT * from users;
 
 -- name: ResetDatabase :exec
 DELETE FROM users;
+
+
 
 
 
