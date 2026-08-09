@@ -131,6 +131,44 @@ func handlerUsers(s *state, cmd command) error {
 }
 
 
+func handlerAddFeed(s *state, cmd command) error {
+	if len(cmd.args) < 2 {
+		return errors.New("the `addfeed` handler expects a two arguments: the `name` of the feed and the `url` of the feed")
+	}
+	ctx := context.Background()
+	name := cmd.args[0]
+	url := cmd.args[1]
+	t := time.Now()
+
+	user, err := s.db.GetUser(ctx, name)
+	if err != nil {
+		return err
+	}
+
+	rssfeed, err := s.db.CreateFeed(ctx, database.CreateFeedParams{
+		ID: uuid.New(),
+		CreatedAt: t,
+		UpdatedAt: t,
+		Name: name,
+		Url: url,
+		UserID: user.ID})
+	if err != nil {
+		return err
+	}
+
+	fmt.Println("Channel")
+	fmt.Printf("  ID: %s\n", rssfeed.ID)
+	fmt.Printf("  CreatedAt: %s\n", rssfeed.CreatedAt)
+	fmt.Printf("  UpdatedAt: %s\n", rssfeed.UpdatedAt)
+	fmt.Printf("  Name: %s\n", rssfeed.Name)
+	fmt.Printf("  Url: %s\n", rssfeed.Url)
+	fmt.Printf("  UserID: %s\n", rssfeed.UserID)
+
+	return nil
+}
+
+
+
 func handlerAgg(s *state, cmd command) error {
 	ctx := context.Background()
 	rssfeed, err := fetchFeed(ctx, "https://www.wagslane.dev/index.xml")
