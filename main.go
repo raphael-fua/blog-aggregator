@@ -34,6 +34,9 @@ func main() {
 			"users": handlerUsers,
 			"agg": handlerAgg,
 			"addfeed": handlerAddFeed,
+			"feeds": handlerFeeds,
+			"follow": handlerFollow,
+			"following": handlerFollowing,
 		},
 	}
 	cmdLine := os.Args

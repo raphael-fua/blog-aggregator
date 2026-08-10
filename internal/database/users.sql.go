@@ -14,12 +14,7 @@ import (
 
 const createUser = `-- name: CreateUser :one
 INSERT INTO users (id, created_at, updated_at, name)
-VALUES (
-  $1,
-  $2,
-  $3,
-  $4
-)
+VALUES ($1, $2, $3, $4)
 RETURNING id, created_at, updated_at, name
 `
 
@@ -45,6 +40,17 @@ func (q *Queries) CreateUser(ctx context.Context, arg CreateUserParams) (User, e
 		&i.Name,
 	)
 	return i, err
+}
+
+const getName = `-- name: GetName :one
+SELECT name from users where id = $1
+`
+
+func (q *Queries) GetName(ctx context.Context, id uuid.UUID) (string, error) {
+	row := q.db.QueryRowContext(ctx, getName, id)
+	var name string
+	err := row.Scan(&name)
+	return name, err
 }
 
 const getUser = `-- name: GetUser :one
