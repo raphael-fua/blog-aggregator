@@ -35,8 +35,8 @@ INNER JOIN users
 WHERE users.id = $1;
 
 
-
-
+-- name: Delete_FollowRecord_ByUserFeedCombination :exec
+DELETE FROM feed_follows WHERE user_id = $1 AND feed_id = $2;
 
 
 

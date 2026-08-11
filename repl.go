@@ -88,6 +88,27 @@ func handlerFollowing(s *state, cmd command, user database.User) error {
 }
 
 
+func handlerUnfollow(s *state, cmd command, user database.User) error {
+	if len(cmd.args) != 1 {
+		return errors.New("`unfollow` handler requires exactly one argument, the feed url")
+	}
+	url := cmd.args[0]
+	ctx := context.Background()
+	feed, err := s.db.GetFeedFromUrl(ctx, url)
+    if err != nil {
+		return errors.New("no feed associated to that url found")
+	}
+	err = s.db.Delete_FollowRecord_ByUserFeedCombination(
+		ctx, database.Delete_FollowRecord_ByUserFeedCombinationParams{
+			UserID: user.ID,
+			FeedID: feed.ID})
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+
 func handlerLogin(s *state, cmd command) error {
 	if len(cmd.args) == 0 {
 		return errors.New("the `login` handler expects a single argument, the username")
@@ -204,11 +225,6 @@ func handlerAddFeed(s *state, cmd command, user database.User) error {
 	name := cmd.args[0]
 	url := cmd.args[1]
 	t := time.Now()
-
-	// user, err := s.db.GetUser(ctx, s.cfg.UserName)
-	// if err != nil {
-	// 	return err
-	// }
 
 	rssfeed, err := s.db.CreateFeed(ctx, database.CreateFeedParams{
 		ID: uuid.New(),
