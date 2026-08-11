@@ -204,7 +204,7 @@ func handlerUsers(s *state, cmd command) error {
 }
 
 
-func handlerAddFeed(s *state, cmd command) error {
+func handlerAddFeed(s *state, cmd command, user database.User) error {
 	if len(cmd.args) < 2 {
 		return errors.New("the `addfeed` handler expects a two arguments: the `name` of the feed and the `url` of the feed")
 	}
@@ -213,10 +213,10 @@ func handlerAddFeed(s *state, cmd command) error {
 	url := cmd.args[1]
 	t := time.Now()
 
-	user, err := s.db.GetUser(ctx, s.cfg.UserName)
-	if err != nil {
-		return err
-	}
+	// user, err := s.db.GetUser(ctx, s.cfg.UserName)
+	// if err != nil {
+	// 	return err
+	// }
 
 	rssfeed, err := s.db.CreateFeed(ctx, database.CreateFeedParams{
 		ID: uuid.New(),
@@ -332,6 +332,16 @@ func fetchFeed(ctx context.Context, feedURL string) (*RSSFeed, error) {
 
 
 
+// func middlewareLoggedIn(
+// 	handler func(s *state, cmd command, user database.User) error) func(*state, command) error {
+// 	return func(s *state, cmd command) error {
+// 		user, err := s.db.GetUser(context.Background(), s.cfg.UserName)
+// 		if err != nil {
+// 			return err
+// 		}
+// 		return handler(s, cmd, user)
+// 	}
+// }
 
 
 
