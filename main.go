@@ -35,8 +35,8 @@ func main() {
 			"agg": handlerAgg,
 			"addfeed": middlewareLoggedIn(handlerAddFeed),
 			"feeds": handlerFeeds,
-			"follow": handlerFollow,
-			"following": handlerFollowing,
+			"follow": middlewareLoggedIn(handlerFollow),
+			"following": middlewareLoggedIn(handlerFollowing),
 		},
 	}
 	cmdLine := os.Args

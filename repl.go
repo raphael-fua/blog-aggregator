@@ -43,7 +43,7 @@ func (c *commands) run(s *state, cmd command) error {
 }
 
 
-func handlerFollow(s *state, cmd command) error {
+func handlerFollow(s *state, cmd command, user database.User) error {
 	if len(cmd.args) == 0 {
 		return errors.New("the `follow` handler expects a single argument, the url")
 	}
@@ -52,10 +52,6 @@ func handlerFollow(s *state, cmd command) error {
 	feed, err := s.db.GetFeedFromUrl(ctx, url)
     if err != nil {
 		return errors.New("no feed associated to that url found")
-	}
-	user, err := s.db.GetUser(ctx, s.cfg.UserName)
-	if err != nil {
-		return errors.New("user with that name not found")
 	}
 	t := time.Now() 
 	feedFollow, err := s.db.CreateFeedFollow(
@@ -75,12 +71,8 @@ func handlerFollow(s *state, cmd command) error {
 }
 
 
-func handlerFollowing(s *state, cmd command) error {
+func handlerFollowing(s *state, cmd command, user database.User) error {
 	ctx := context.Background()
-	user, err := s.db.GetUser(ctx, s.cfg.UserName)
-	if err != nil {
-		return errors.New("user with that name not found")
-	}
 	feeds, err := s.db.GetFeedFollowsForUser(ctx, user.ID)
     if err != nil {
 		return errors.New("error getting feed(s) followed by the current user")
@@ -319,32 +311,11 @@ func fetchFeed(ctx context.Context, feedURL string) (*RSSFeed, error) {
 	if err != nil {
 		return nil, err
 	}
-
 	rssResp.Channel.Title = html.UnescapeString(rssResp.Channel.Title)
 	rssResp.Channel.Description = html.UnescapeString(rssResp.Channel.Description)
 	for i := range rssResp.Channel.Item {
 		rssResp.Channel.Item[i].Title = html.UnescapeString(rssResp.Channel.Item[i].Title)
 		rssResp.Channel.Item[i].Description = html.UnescapeString(rssResp.Channel.Item[i].Description)
 	}
-
 	return &rssResp, nil
 }
-
-
-
-// func middlewareLoggedIn(
-// 	handler func(s *state, cmd command, user database.User) error) func(*state, command) error {
-// 	return func(s *state, cmd command) error {
-// 		user, err := s.db.GetUser(context.Background(), s.cfg.UserName)
-// 		if err != nil {
-// 			return err
-// 		}
-// 		return handler(s, cmd, user)
-// 	}
-// }
-
-
-
-
-
-
