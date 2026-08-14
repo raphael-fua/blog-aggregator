@@ -261,27 +261,47 @@ func handlerAddFeed(s *state, cmd command, user database.User) error {
 
 
 func handlerAgg(s *state, cmd command) error {
-	ctx := context.Background()
-	rssfeed, err := fetchFeed(ctx, "https://www.wagslane.dev/index.xml")
-    if err != nil {
+	if len(cmd.args) != 1 {
+		return errors.New(
+			"`agg` handler requires exactly one argument, the time between requests")
+	}
+	time_between_reqs := cmd.args[0]
+	timeBetweenRequests, err := time.ParseDuration(time_between_reqs)
+	if err != nil {
 		return err
 	}
-	// fmt.Printf("FEED: %+v\n", rssfeed)
+	fmt.Printf("Collecting feeds every %v", time_between_reqs)
 
-	fmt.Println("Channel")
-	fmt.Printf("  Title: %s\n", rssfeed.Channel.Title)
-	fmt.Printf("  Link: %s\n", rssfeed.Channel.Link)
-	fmt.Printf("  Description: %s\n", rssfeed.Channel.Description)
-
-	for i, item := range rssfeed.Channel.Item {
-		fmt.Printf("    Item %d\n", i)
-		fmt.Printf("      Title: %s\n", item.Title)
-		fmt.Printf("      Link: %s\n", item.Link)
-		fmt.Printf("      Description: %s\n", item.Description)
-		fmt.Printf("      PubDate: %s\n", item.PubDate)
+	ticker := time.NewTicker(timeBetweenRequests)
+	for ; ; <-ticker.C {
+		err = scrapeFeeds(s)
+		if err != nil {
+			return err
+		}
 	}
-	return nil
 }
+
+// 	ctx := context.Background()
+// 	rssfeed, err = fetchFeed(ctx, "https://www.wagslane.dev/index.xml")
+//     if err != nil {
+// 		return err
+// 	}
+// 	// fmt.Printf("FEED: %+v\n", rssfeed)
+//
+// 	fmt.Println("Channel")
+// 	fmt.Printf("  Title: %s\n", rssfeed.Channel.Title)
+// 	fmt.Printf("  Link: %s\n", rssfeed.Channel.Link)
+// 	fmt.Printf("  Description: %s\n", rssfeed.Channel.Description)
+//
+// 	for i, item := range rssfeed.Channel.Item {
+// 		fmt.Printf("    Item %d\n", i)
+// 		fmt.Printf("      Title: %s\n", item.Title)
+// 		fmt.Printf("      Link: %s\n", item.Link)
+// 		fmt.Printf("      Description: %s\n", item.Description)
+// 		fmt.Printf("      PubDate: %s\n", item.PubDate)
+// 	}
+// 	return nil
+// }
 
 
 type RSSFeed struct {
@@ -335,3 +355,31 @@ func fetchFeed(ctx context.Context, feedURL string) (*RSSFeed, error) {
 	}
 	return &rssResp, nil
 }
+
+
+func scrapeFeeds(s *state) error {
+	ctx := context.Background()
+	feed, err := s.db.GetNextFeedToFetch(ctx)
+	if err != nil {
+		return err
+	}
+	err = s.db.MarkFeedFetched(ctx, feed.ID)
+	if err != nil {
+		return err
+	}
+	rssfeed, err := fetchFeed(ctx, feed.Url)
+	if err != nil {return err}
+
+	// fmt.Println("Channel")
+	// fmt.Printf("  Title: %s\n", rssfeed.Channel.Title)
+	// fmt.Printf("  Link: %s\n", rssfeed.Channel.Link)
+	// fmt.Printf("  Description: %s\n", rssfeed.Channel.Description)
+
+	for _, item := range rssfeed.Channel.Item {
+		fmt.Printf("      Title: %s\n", item.Title)
+	}
+	return nil
+}
+
+
+
