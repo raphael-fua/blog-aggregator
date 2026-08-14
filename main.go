@@ -38,6 +38,7 @@ func main() {
 			"follow": middlewareLoggedIn(handlerFollow),
 			"following": middlewareLoggedIn(handlerFollowing),
 			"unfollow": middlewareLoggedIn(handlerUnfollow),
+			"browse": middlewareLoggedIn(handlerBrowse),
 		},
 	}
 	cmdLine := os.Args

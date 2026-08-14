@@ -1,6 +1,7 @@
 package main
 
 import (
+	"strings"
 	"context"
 	"database/sql"
 	"encoding/xml"
@@ -9,6 +10,7 @@ import (
 	"html"
 	"io"
 	"net/http"
+	"strconv"
 	"time"
 
 	"github.com/google/uuid"
@@ -85,6 +87,39 @@ func handlerFollowing(s *state, cmd command, user database.User) error {
 		fmt.Printf("%s\n", feed.FeedName)
 	}
 	return nil
+}
+
+
+func handlerBrowse(s *state, cmd command, user database.User) error {
+	ctx := context.Background()
+	limit := 2
+    if len(cmd.args) > 1 {
+		i, err := strconv.Atoi(cmd.args[1])
+	    if err != nil {
+			return err
+		}
+        limit = i
+	}
+
+	posts, err := s.db.GetPostsForUser(ctx, database.GetPostsForUserParams{
+		UserID: user.ID,
+		Limit: int32(limit),
+	})
+	if err != nil {
+		return err
+	}
+	for j, post := range posts {
+		fmt.Printf("post number   : %d\n", j + 1)
+		fmt.Printf("post id       : %v\n", post.ID)
+		fmt.Printf("feed id       : %v\n", post.FeedID)
+		fmt.Printf("created_at    : %v\n", post.CreatedAt)
+		fmt.Printf("updated_at    : %v\n", post.UpdatedAt)
+		fmt.Printf("published_at  : %v\n", post.PublishedAt.Time)
+		fmt.Printf("title         : %s\n", post.Title)
+		fmt.Printf("url           : %s\n", post.Url)
+		fmt.Println("------------------------------------------------------------------------------------------")
+	}
+    return nil
 }
 
 
@@ -369,17 +404,44 @@ func scrapeFeeds(s *state) error {
 	}
 	rssfeed, err := fetchFeed(ctx, feed.Url)
 	if err != nil {return err}
-
-	// fmt.Println("Channel")
-	// fmt.Printf("  Title: %s\n", rssfeed.Channel.Title)
-	// fmt.Printf("  Link: %s\n", rssfeed.Channel.Link)
-	// fmt.Printf("  Description: %s\n", rssfeed.Channel.Description)
-
 	for _, item := range rssfeed.Channel.Item {
-		fmt.Printf("      Title: %s\n", item.Title)
+		now := time.Now()
+		pubTime, err := time.Parse(time.RFC1123, item.PubDate)
+		valid := true
+		if err != nil {
+        	valid = false
+		}                             
+		_, err = s.db.CreatePost(ctx, database.CreatePostParams{
+          ID: uuid.New(),
+		  FeedID: feed.ID,
+		  CreatedAt: now,
+		  UpdatedAt: now,
+		  PublishedAt: sql.NullTime{
+                Time: pubTime,
+            	Valid: valid,
+		  },
+		  Title: item.Title,
+		  Url: item.Link,
+		  Description: sql.NullString{
+              String: item.Description,
+			  Valid: true,
+		  },
+		})
+		if err != nil && !strings.Contains(err.Error(), "posts_url_key") {
+			return err
+		}
 	}
 	return nil
 }
+
+
+
+
+
+
+
+
+
 
 
 
